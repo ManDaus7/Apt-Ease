@@ -626,7 +626,7 @@ main .recent-orders a{
   width: 330px;
   padding: 2rem 0 1rem 0;
   margin: 50px auto;
-  background: #fff;
+  background: var(--color-white);
   border-radius: 10px;
   text-align: center;
   box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
@@ -659,8 +659,8 @@ main .recent-orders a{
   outline: none;
   border: none;
   width: 85%;
-  background: #03a4a4;
-  color: #fff;
+  background: var(--color-primary);
+  color: var(--color-white);
   cursor: pointer;
 }
 .wrapper button:hover{
