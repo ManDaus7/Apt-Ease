@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="dashboard.css">
+    <title>Staff Dashboard | Apt-Ease</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Sidebar Section -->
+        <aside>
+            <div class="toggle">
+                <div class="logo">
+                    <img src="images/logo.png">
+                    <h2>Apt-Ease</h2>
+                </div>
+                <div class="close" id="close-btn">
+                  <span class="material-symbols-outlined">
+                    close
+                  </span>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <a href="patient.html">
+                  <span class="material-symbols-outlined">
+                    dashboard
+                  </span>
+                  <h3>Dashboard</h3>
+                </a>
+                <a href="#">
+                  <span class="material-symbols-outlined">
+                    person
+                  </span>
+                  <h3>Users</h3>
+                </a>
+                <a href="#">
+                  <span class="material-symbols-outlined">
+                    history
+                  </span>
+                  <h3>History</h3>
+                </a>
+                <a href="book.html" class="active">
+                  <span class="material-symbols-outlined">
+                    book
+                  </span>
+                  <h3>Book</h3>
+                </a>
+                <a href="#">
+                  <span class="material-symbols-outlined">
+                    chat
+                  </span>
+                  <h3>Messages</h3>
+                  <span class="message-count">1</span>
+                </a>
+                <a href="#">
+                  <span class="material-symbols-outlined">
+                    library_books
+                  </span>
+                  <h3>Appointments</h3>
+                </a>
+                <a href="#">
+                  <span class="material-symbols-outlined">
+                    report
+                  </span>
+                  <h3>Reports</h3>
+                </a>
+                <a href="#">
+                  <span class="material-symbols-outlined">
+                    settings
+                  </span>
+                  <h3>Settings</h3>
+                </a>
+                <a href="login.html">
+                  <span class="material-symbols-outlined">
+                    login
+                  </span>
+                  <h3>New Login</h3>
+                </a>
+                <a href="index.html">
+                  <span class="material-symbols-outlined">
+                    logout
+                  </span>
+                  <h3>Logout</h3>
+                </a>
+            </div>
+        </aside>
+        <!-- End of Sidebar Section -->
+
+        <!-- Main Content -->
+        <main>
+            <!-- New Users Section -->
+            <h2>Book Now</h2>
+            <div class="wrapper">
+                <form class="form2">
+                    <label>Type of Appointment:</label>
+                    <select required>
+                        <option hidden>Choose type</option>
+                        <option>Consultation</option>
+                        <option>Medical Check-Up</option>
+                        <option>Vaccination</option>
+                        <option>Dental Services</option>
+                        <option>Physiotherapy</option>
+                        <option>Surgery</option>
+                        <option>Others</option>
+                    </select>
+                    <label>Preferred Doctor:</label>
+                    <select required>
+                        <option hidden>Choose Doctor</option>
+                        <option>Dr Choii</option>
+                        <option>Dr Hashim</option>
+                        <option>Dr Ina</option>
+                        <option>Dr Khan</option>
+                        <option>Dr Lee</option>
+                        <option>Dr Nur</option>
+                        <option>No preference</option>
+                    </select>
+                    <label>Preferred Date:</label>
+                    <input type="date" required>
+                    <label>Preferred Time:</label>
+                    <input type="time" required>
+                    <label>Reason for Appointment:</label>
+                    <textarea placeholder="Enter your reason..."></textarea>
+                </form>
+                <button>Book Appointment</button>
+            </div>
+            <!-- End of New Users Section -->
+
+            <!-- Recent Orders Table -->
+            
+            <!-- End of Recent Orders -->
+
+        </main>
+        <!-- End of Main Content -->
+
+        <!-- Right Section -->
+        <div class="right-section">
+            <div class="nav">
+                <button id="menu-btn">
+                  <span class="material-symbols-outlined">
+                    menu
+                  </span> 
+                </button>
+                <div class="dark-mode">
+                  <span class="material-symbols-outlined active">
+                    light_mode
+                  </span>
+                  <span class="material-symbols-outlined">
+                    dark_mode
+                  </span>
+                </div>
+
+                <div class="profile">
+                    <div class="info">
+                        <p>Hey, <b>Abu Jihad</b></p>
+                        <small class="text-muted">Patient</small>
+                    </div>
+                    <div class="profile-photo">
+                        <img src="images/AbuJihad.jpg">
+                    </div>
+                </div>
+
+            </div>
+            <!-- End of Nav -->
+
+            <div class="reminders">
+                <div class="header">
+                    <h2>Reminders</h2>
+                    <span class="material-symbols-outlined">
+                      notifications
+                    </span>
+                </div>
+
+                <div class="notification">
+                    <div class="icon">
+                      <span class="material-symbols-outlined">
+                        library_books
+                      </span>
+                    </div>
+                    <div class="content">
+                        <div class="info">
+                            <h3>Appointment</h3>
+                            <small class="text_muted">
+                                10:00 AM
+                            </small>
+                        </div>
+                        <span class="material-symbols-outlined">
+                          more_vert
+                        </span>
+                    </div>
+                </div>
+
+                <div class="notification deactive">
+                    <div class="icon">
+                      <span class="material-symbols-outlined">
+                        pill
+                      </span>
+                    </div>
+                    <div class="content">
+                        <div class="info">
+                            <h3>Medication</h3>
+                            <small class="text_muted">
+                                12:00 AM
+                            </small>
+                        </div>
+                        <span class="material-symbols-outlined">
+                          more_vert
+                        </span>
+                    </div>
+                </div>
+
+                <div class="notification add-reminder">
+                    <div>
+                      <span class="material-symbols-outlined">
+                        add
+                      </span>
+                      <h3>Add Reminder</h3>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="reminders">
+                <div class="header">
+                    <h2>Messages</h2>
+                    <span class="material-symbols-outlined">
+                      chat
+                    </span>
+                </div>
+
+                <div class="notification">
+                    <img src="images/doctor.jpg">
+                    <div class="content">
+                        <div class="info">
+                            <h3>Dr Hashim</h3>
+                            <small class="text_muted">
+                                Waalaikumussalam Mr.Abu <span class="message-count">1</span>
+                            </small>
+                        </div>
+                        <span class="material-symbols-outlined">
+                          chevron_right
+                        </span>
+                    </div>
+                </div>
+
+                <div class="notification deactive">
+                    <img src="images/DoctorF.jpg">
+                    <div class="content">
+                        <div class="info">
+                            <h3>Dr Ina</h3>
+                            <small class="text_muted">
+                                Thank you, Dr Ina.
+                            </small>
+                        </div>
+                        <span class="material-symbols-outlined">
+                          chevron_right
+                        </span>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

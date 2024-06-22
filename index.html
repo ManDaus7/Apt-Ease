@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apt-Ease</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <section class="header">
+    <nav>
+      <a href="index.html"><img src="images/logo.png"></a>
+      <div class="menu" id="menu">
+        <span class="material-symbols-outlined" onclick="hideMenu()">
+          close
+        </span>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </div>
+      <span class="material-symbols-outlined" onclick="showMenu()">
+        menu
+      </span>
+    </nav>
+  </section>
+
+  <section class="hero">
+    <p>Your Health, Our Priority</p>
+    <h1>Effortless Scheduling for Healthier Lives</h1>
+    <p>At AptEase, we believe that managing your healthcare should be as simple and stress-free as possible. Whether you’re booking an appointment with your doctor or managing your schedule as a healthcare provider, our platform offers an intuitive and seamless experience. Our mission is to ensure that you spend less time worrying about appointments and more time focusing on what truly matters – your health.</p>
+  </section>
+
+  <section class="services-overview">
+    <h1>Our Services</h1>
+    <div class="row">
+      <div class="service-item">
+        <img src="images/checkup.jpg">
+        <h3>Medical Check-ups</h3>
+        <p>Comprehensive health check-ups tailored to your needs.</p>
+      </div>
+      <div class="service-item">
+        <img src="images/vaccination.jpg">
+        <h3>Vaccinations</h3>
+        <p>Keep your vaccinations up to date with ease.</p>
+      </div>
+      <div class="service-item">
+        <img src="images/consultation.jpg">
+        <h3>Consultation</h3>
+        <p>Advanced imaging services for accurate diagnosis.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="how-it-works">
+    <h1>How It Works</h1>
+    <div class="row">
+      <div class="step">
+        <i class="fa fa-user-plus"></i>
+        <h3>Sign Up</h3>
+        <p>Create an account in just a few easy steps.</p>
+      </div>
+      <div class="step">
+        <i class="fa fa-calendar-check"></i>
+        <h3>Book Appointment</h3>
+        <p>Choose your preferred doctor and time slot.</p>
+      </div>
+      <div class="step">
+        <i class="fa fa-handshake"></i>
+        <h3>Consult</h3>
+        <p>Meet your doctor and get the care you need.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="featured-doctors">
+    <h1>Meet Our Doctors</h1>
+    <div class="row">
+      <div class="doctor-profile">
+        <img src="images/johndoe.jpg">
+        <div>
+          <h3>Dr. John Doe</h3>
+          <p>Cardiologist with 15 years of experience, committed to providing exceptional cardiac care and personalized treatment plans.</p>
+        </div>
+      </div>
+      <div class="doctor-profile">
+        <img src="images/janesmith.jpg">
+        <div>
+          <h3>Dr. Jane Smith</h3>
+          <p>Renowned pediatrician known for her compassionate care and expertise in child health and development.</p>
+        </div>
+      </div>
+      <div class="doctor-profile">
+        <img src="images/hashim.jpg">
+        <div>
+          <h3>Dr. Hashim</h3>
+          <p>Leading orthopedic surgeon specializing in minimally invasive techniques and advanced joint replacement procedures.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="patient-testimonials">
+    <h1>What Our Patients Say</h1>
+    <div class="row">
+      <div class="testimonial">
+        <img src="images/MaryJane.jpg">
+        <div>
+          <p>"AptEase made booking my appointment so easy and stress-free. Highly recommend!"</p>
+          <h3 class="author">- Mary Jane</h3>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-half-stroke"></i>
+        </div>
+      </div>
+      <div class="testimonial">
+        <img src="images/JohnWick.jpg">
+        <div>
+          <p>"The care I received was top-notch. The doctors are very professional."</p>
+          <h3 class="author">- John Wick</h3>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <h1>
+      "Ready to Take the Next Step in <br> Your Healthcare Journey?"
+    </h1>
+    <a href="contact.html" class="btn">CONTACT US</a>
+  </section>
+
+  <section class="footer">
+    <h4>About Us</h4>
+    <p>AptEase is dedicated to simplifying the healthcare experience by offering an intuitive platform for booking medical appointments effortlessly.<br> Our mission is to connect patients with top-notch healthcare professionals, ensuring timely and quality care.<br> We strive to enhance patient satisfaction through innovative solutions and compassionate service.</p>
+    <div class="social-media">
+      <a href="#"><i class="fa-brands fa-facebook"></i></a>
+      <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+    <p>&copy; 2024 AptEase. All rights reserved.</p>
+  </footer>
+  
+  
+
+<script src="/main.js"></script>
+</body>
+</html>
+
+
+

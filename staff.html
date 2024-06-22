@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="dashboard.css">
+    <title>Staff Dashboard | Apt-Ease</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Sidebar Section -->
+        <aside>
+          <div class="toggle">
+            <div class="logo">
+                <img src="images/logo.png">
+                <h2>Apt-Ease</h2>
+            </div>
+            <div class="close" id="close-btn">
+              <span class="material-symbols-outlined">
+                close
+              </span>
+            </div>
+          </div>
+
+          <div class="sidebar">
+            <a href="#" class="active">
+              <span class="material-symbols-outlined">
+                dashboard
+              </span>
+              <h3>Dashboard</h3>
+            </a>
+            <a href="#">
+              <span class="material-symbols-outlined">
+                person
+              </span>
+              <h3>Users</h3>
+            </a>
+            <a href="#">
+              <span class="material-symbols-outlined">
+                history
+              </span>
+              <h3>History</h3>
+            </a>
+            <a href="#">
+              <span class="material-symbols-outlined">
+                monitoring
+              </span>
+              <h3>Analytics</h3>
+            </a>
+            <a href="#">
+              <span class="material-symbols-outlined">
+                chat
+              </span>
+              <h3>Messages</h3>
+              <span class="message-count">3</span>
+            </a>
+            <a href="#">
+              <span class="material-symbols-outlined">
+                library_books
+              </span>
+              <h3>Appointments</h3>
+            </a>
+            <a href="#">
+              <span class="material-symbols-outlined">
+                report
+              </span>
+              <h3>Reports</h3>
+            </a>
+            <a href="#">
+              <span class="material-symbols-outlined">
+                settings
+              </span>
+              <h3>Settings</h3>
+            </a>
+            <a href="login.html">
+              <span class="material-symbols-outlined">
+                login
+              </span>
+              <h3>New Login</h3>
+            </a>
+            <a href="index.html">
+              <span class="material-symbols-outlined">
+                logout
+              </span>
+              <h3>Logout</h3>
+            </a>
+          </div>
+        </aside>
+        <!-- End of Sidebar Section -->
+
+        <!-- Main Content -->
+        <main>
+            <!-- New Users Section -->
+            <div class="new-users">
+                <h2>Patients</h2>
+                <div class="user-list">
+                    <div class="user">
+                        <img src="images/AbuJihad.jpg">
+                        <h2>Abu Jihad</h2>
+                        <button><h3>Profile</h3></button>
+                    </div>
+                    <div class="user">
+                        <img src="images/MaryJane.jpg">
+                        <h2>Mary Jane</h2>
+                        <button><h3>Profile</h3></button>
+                    </div>
+                    <div class="user">
+                        <img src="images/JohnWick.jpg">
+                        <h2>John Wick</h2>
+                        <button><h3>Profile</h3></button>
+                    </div>
+                    <div class="user">
+                        <img src="images/Siti.jpg">
+                        <h2>Siti Kalsium</h2>
+                        <button><h3>Profile</h3></button>
+                    </div>
+                </div>
+            </div>
+            <!-- End of New Users Section -->
+
+            <!-- Recent Orders Table -->
+            <div class="recent-orders">
+                <h2>History</h2>
+                <table>
+                    <thead>
+                      <tr>
+                        <th>#</th>
+                        <th>Dates</th>
+                        <th>Name</th>
+                        <th>Type</th>
+                        <th>Amount</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>2, Aug, 2022</td>
+                        <td>Siti Kalsium</td>
+                        <td>Medical Check-Up</td>
+                        <td>RM200.00</td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>29, July, 2022</td>
+                        <td>Lee</td>
+                        <td>Consultation</td>
+                        <td>RM50.00</td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>15, July, 2022</td>
+                        <td>Ahmad</td>
+                        <td>Vaccination</td>
+                        <td>RM80.00</td>
+                      </tr>
+                    </tbody>
+                </table>
+                <a href="#">Show All</a>
+                <h2>Upcoming Appointments</h2>
+                <table>
+                    <thead>
+                      <tr>
+                        <th>#</th>
+                        <th>Name</th>
+                        <th>Type</th>
+                        <th>Date</th>
+                        <th>Time</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>Abu Ali</td>
+                        <td>Consultation</td>
+                        <td>22/7/2024</td>
+                        <td>10:00 AM</td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>Mary Jane</td>
+                        <td>Medical Check-Up</td>
+                        <td>22/7/2024</td>
+                        <td>12:00 AM</td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>John Wick</td>
+                        <td>Physiotherapy</td>
+                        <td>22/7/2024</td>
+                        <td>3:00 PM</td>
+                      </tr>
+                    </tbody>
+                </table>
+                <a href="#">Show All</a>
+            </div>
+            <!-- End of Recent Orders -->
+
+        </main>
+        <!-- End of Main Content -->
+
+        <!-- Right Section -->
+        <div class="right-section">
+            <div class="nav">
+                <button id="menu-btn">
+                  <span class="material-symbols-outlined">
+                    menu
+                  </span>
+                </button>
+                <div class="dark-mode">
+                  <span class="material-symbols-outlined active">
+                    light_mode
+                  </span>
+                  <span class="material-symbols-outlined">
+                    dark_mode
+                  </span>
+                </div>
+
+                <div class="profile">
+                    <div class="info">
+                        <p>Hey, <b>Dr Hashim</b></p>
+                        <small class="text-muted">Staff</small>
+                    </div>
+                    <div class="profile-photo">
+                        <img src="images/doctor.jpg">
+                    </div>
+                </div>
+
+            </div>
+            <!-- End of Nav -->
+
+            <div class="reminders">
+                <div class="header">
+                    <h2>Reminders</h2>
+                    <span class="material-symbols-outlined">
+                      notifications
+                    </span>
+                </div>
+
+                <div class="notification">
+                    <div class="icon">
+                        <span class="material-symbols-outlined">
+                          groups
+                        </span>
+                    </div>
+                    <div class="content">
+                        <div class="info">
+                            <h3>Meeting</h3>
+                            <small class="text_muted">
+                                08:00 AM - 10:00 AM
+                            </small>
+                        </div>
+                        <span class="material-symbols-outlined">
+                          more_vert
+                        </span>
+                    </div>
+                </div>
+
+                <div class="notification deactive">
+                    <div class="icon">
+                      <span class="material-symbols-outlined">
+                        model_training
+                      </span>
+                    </div>
+                    <div class="content">
+                        <div class="info">
+                            <h3>Training</h3>
+                            <small class="text_muted">
+                                08:00 AM - 12:00 PM
+                            </small>
+                        </div>
+                        <span class="material-symbols-outlined">
+                          more_vert
+                        </span>
+                    </div>
+                </div>
+
+                <div class="notification add-reminder">
+                    <div>
+                      <span class="material-symbols-outlined">
+                        add
+                      </span>
+                      <h3>Add Reminder</h3>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="reminders">
+                <div class="header">
+                    <h2>Messages</h2>
+                    <span class="material-symbols-outlined">
+                      chat
+                    </span>
+                </div>
+
+                <div class="notification">
+                    <img src="images/AbuJihad.jpg">
+                    <div class="content">
+                        <div class="info">
+                            <h3>Abu Jihad</h3>
+                            <small class="text_muted">
+                                Assalamualaikum Dr. <span class="message-count">1</span>
+                            </small>
+                        </div>
+                        <span class="material-symbols-outlined">
+                          chevron_right
+                        </span>
+                    </div>
+                </div>
+
+                <div class="notification deactive">
+                    <img src="images/MaryJane.jpg">
+                    <div class="content">
+                        <div class="info">
+                            <h3>Mary Jane</h3>
+                            <small class="text_muted">
+                                Thank you, Dr. <span class="message-count">2</span>
+                            </small>
+                        </div>
+                        <span class="material-symbols-outlined">
+                          chevron_right
+                        </span>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
